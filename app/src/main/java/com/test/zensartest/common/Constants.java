@@ -2,6 +2,6 @@ package com.test.zensartest.common;
 
 public class Constants {
 
-    public static final String BASE_URL = "https://jl-nonprod-syst.apigee.net/v1/categories/600001506/products";
-    public static final String API_KEY = "";
+    public static final String BASE_URL = "https://jl-nonprod-syst.apigee.net/v1/categories/600001506/";
+    public static final String API_KEY = "2ALHCAAs6ikGRBoy6eTHA58RaG097Fma";
 }

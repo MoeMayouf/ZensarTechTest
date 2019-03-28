@@ -9,7 +9,7 @@ public class Products {
 
     @SerializedName("products")
     @Expose
-    private List<Product> products = null;
+    private List<ZensarProduct> products = null;
     @SerializedName("facets")
     @Expose
     private List<Facet> facets = null;
@@ -56,11 +56,11 @@ public class Products {
     @Expose
     private String endecaCanonical;
 
-    public List<Product> getProducts() {
+    public List<ZensarProduct> getProducts() {
         return products;
     }
 
-    public void setProducts(List<Product> products) {
+    public void setProducts(List<ZensarProduct> products) {
         this.products = products;
     }
 
