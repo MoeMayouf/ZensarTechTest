@@ -1,11 +1,12 @@
 
 package com.test.zensartest.data.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class ZensarProduct {
+import java.util.List;
+
+public class Product {
 
     @SerializedName("productId")
     @Expose

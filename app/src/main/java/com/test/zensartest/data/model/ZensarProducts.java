@@ -1,15 +1,16 @@
 
 package com.test.zensartest.data.model;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Products {
+import java.util.List;
+
+public class ZensarProducts {
 
     @SerializedName("products")
     @Expose
-    private List<ZensarProduct> products = null;
+    private List<Product> products = null;
     @SerializedName("facets")
     @Expose
     private List<Facet> facets = null;
@@ -56,11 +57,11 @@ public class Products {
     @Expose
     private String endecaCanonical;
 
-    public List<ZensarProduct> getProducts() {
+    public List<Product> getProducts() {
         return products;
     }
 
-    public void setProducts(List<ZensarProduct> products) {
+    public void setProducts(List<Product> products) {
         this.products = products;
     }
 
