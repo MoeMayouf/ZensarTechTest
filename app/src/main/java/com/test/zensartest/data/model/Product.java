@@ -38,9 +38,6 @@ public class Product {
     @SerializedName("displaySpecialOffer")
     @Expose
     private String displaySpecialOffer;
-    @SerializedName("promoMessages")
-    @Expose
-    private PromoMessages promoMessages;
     @SerializedName("nonPromoMessage")
     @Expose
     private String nonPromoMessage;
@@ -104,12 +101,6 @@ public class Product {
     @SerializedName("features")
     @Expose
     private List<Object> features = null;
-    @SerializedName("quickAddToBasket")
-    @Expose
-    private QuickAddToBasket quickAddToBasket;
-    @SerializedName("dynamicAttributes")
-    @Expose
-    private DynamicAttributes dynamicAttributes;
     @SerializedName("directorate")
     @Expose
     private String directorate;
@@ -195,14 +186,6 @@ public class Product {
 
     public void setDisplaySpecialOffer(String displaySpecialOffer) {
         this.displaySpecialOffer = displaySpecialOffer;
-    }
-
-    public PromoMessages getPromoMessages() {
-        return promoMessages;
-    }
-
-    public void setPromoMessages(PromoMessages promoMessages) {
-        this.promoMessages = promoMessages;
     }
 
     public String getNonPromoMessage() {
@@ -371,22 +354,6 @@ public class Product {
 
     public void setFeatures(List<Object> features) {
         this.features = features;
-    }
-
-    public QuickAddToBasket getQuickAddToBasket() {
-        return quickAddToBasket;
-    }
-
-    public void setQuickAddToBasket(QuickAddToBasket quickAddToBasket) {
-        this.quickAddToBasket = quickAddToBasket;
-    }
-
-    public DynamicAttributes getDynamicAttributes() {
-        return dynamicAttributes;
-    }
-
-    public void setDynamicAttributes(DynamicAttributes dynamicAttributes) {
-        this.dynamicAttributes = dynamicAttributes;
     }
 
     public String getDirectorate() {

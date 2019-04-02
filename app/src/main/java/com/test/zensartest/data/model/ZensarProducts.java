@@ -11,36 +11,24 @@ public class ZensarProducts {
     @SerializedName("products")
     @Expose
     private List<Product> products;
-    @SerializedName("facets")
-    @Expose
-    private List<Facet> facets;
     @SerializedName("categoryTitle")
     @Expose
     private String categoryTitle;
     @SerializedName("childCategoriesCount")
     @Expose
     private Integer childCategoriesCount;
-    @SerializedName("seoInformation")
-    @Expose
-    private SeoInformation seoInformation;
     @SerializedName("results")
     @Expose
     private Integer results;
     @SerializedName("pagesAvailable")
     @Expose
     private Integer pagesAvailable;
-    @SerializedName("crumbs")
-    @Expose
-    private List<Crumb> crumbs = null;
     @SerializedName("dynamicBannerId")
     @Expose
     private String dynamicBannerId;
     @SerializedName("seoBannerId")
     @Expose
     private String seoBannerId;
-    @SerializedName("triggeredRules")
-    @Expose
-    private TriggeredRules triggeredRules;
     @SerializedName("redirectUrl")
     @Expose
     private String redirectUrl;
@@ -65,14 +53,6 @@ public class ZensarProducts {
         this.products = products;
     }
 
-    public List<Facet> getFacets() {
-        return facets;
-    }
-
-    public void setFacets(List<Facet> facets) {
-        this.facets = facets;
-    }
-
     public String getCategoryTitle() {
         return categoryTitle;
     }
@@ -87,14 +67,6 @@ public class ZensarProducts {
 
     public void setChildCategoriesCount(Integer childCategoriesCount) {
         this.childCategoriesCount = childCategoriesCount;
-    }
-
-    public SeoInformation getSeoInformation() {
-        return seoInformation;
-    }
-
-    public void setSeoInformation(SeoInformation seoInformation) {
-        this.seoInformation = seoInformation;
     }
 
     public Integer getResults() {
@@ -113,14 +85,6 @@ public class ZensarProducts {
         this.pagesAvailable = pagesAvailable;
     }
 
-    public List<Crumb> getCrumbs() {
-        return crumbs;
-    }
-
-    public void setCrumbs(List<Crumb> crumbs) {
-        this.crumbs = crumbs;
-    }
-
     public String getDynamicBannerId() {
         return dynamicBannerId;
     }
@@ -135,14 +99,6 @@ public class ZensarProducts {
 
     public void setSeoBannerId(String seoBannerId) {
         this.seoBannerId = seoBannerId;
-    }
-
-    public TriggeredRules getTriggeredRules() {
-        return triggeredRules;
-    }
-
-    public void setTriggeredRules(TriggeredRules triggeredRules) {
-        this.triggeredRules = triggeredRules;
     }
 
     public String getRedirectUrl() {
