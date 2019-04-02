@@ -1,6 +1,6 @@
 package com.test.zensartest.domain.repository;
 
-import com.test.zensartest.data.model.Product;
+import com.test.zensartest.data.model.ZensarProducts;
 import com.test.zensartest.data.service.DataSource;
 
 import io.reactivex.Observable;
@@ -16,7 +16,7 @@ public class ZensarRepository implements DataSource {
     }
 
     @Override
-    public Observable<Product> getAlbums() {
+    public Observable<ZensarProducts> getAlbums() {
         return dataSource.getAlbums()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());

@@ -1,11 +1,11 @@
 package com.test.zensartest.data.service;
 
-import com.test.zensartest.data.model.Product;
+import com.test.zensartest.data.model.ZensarProducts;
 
 import io.reactivex.Observable;
 
 public interface DataSource {
 
-    Observable<Product> getAlbums();
+    Observable<ZensarProducts> getAlbums();
 
 }

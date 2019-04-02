@@ -10,10 +10,10 @@ public class ZensarProducts {
 
     @SerializedName("products")
     @Expose
-    private List<Product> products = null;
+    private List<Product> products;
     @SerializedName("facets")
     @Expose
-    private List<Facet> facets = null;
+    private List<Facet> facets;
     @SerializedName("categoryTitle")
     @Expose
     private String categoryTitle;

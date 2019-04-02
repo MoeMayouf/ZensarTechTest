@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".presentation.home.HomeActivity">
+
+    <TextView
+        android:id="@+id/tvProductId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Product ID" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvProductId"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductId"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tvNowPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:text="Now Price" />
+
+    <TextView
+        android:id="@+id/tvWasPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvProductId"
+        app:layout_constraintTop_toBottomOf="@+id/tvNowPrice"
+        tools:text="Was Price" />
+
+    <TextView
+        android:id="@+id/tvThen1Price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvProductId"
+        app:layout_constraintTop_toBottomOf="@+id/tvWasPrice"
+        tools:text="Then Price 1" />
+
+    <TextView
+        android:id="@+id/tvDiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvProductId"
+        app:layout_constraintTop_toBottomOf="@+id/tvThen1Price"
+        tools:text="Discount" />
+
+    <TextView
+        android:id="@+id/tvRGB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNowPrice"
+        app:layout_constraintTop_toBottomOf="@id/tvDiscount"
+        tools:text="RGB Color" />
+
+    <TextView
+        android:id="@+id/tvBasicColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvRGB"
+        app:layout_constraintTop_toTopOf="@+id/tvRGB"
+        tools:text="Basic Color" />
+
+    <TextView
+        android:id="@+id/tvSkuID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvBasicColor"
+        app:layout_constraintTop_toTopOf="@+id/tvRGB"
+        tools:text="SKU ID" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="11dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/tvBasicColor" />
+</android.support.constraint.ConstraintLayout>

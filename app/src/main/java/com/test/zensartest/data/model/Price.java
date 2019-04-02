@@ -17,7 +17,7 @@ public class Price {
     private String then2;
     @SerializedName("now")
     @Expose
-    private String now;
+    private Object now;
     @SerializedName("uom")
     @Expose
     private String uom;
@@ -49,11 +49,11 @@ public class Price {
         this.then2 = then2;
     }
 
-    public String getNow() {
+    public Object getNow() {
         return now;
     }
 
-    public void setNow(String now) {
+    public void setNow(Object now) {
         this.now = now;
     }
 

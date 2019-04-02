@@ -1,8 +1,6 @@
 package com.test.zensartest.presentation.home;
 
-import android.util.Log;
-
-import com.test.zensartest.data.model.Product;
+import com.test.zensartest.data.model.ZensarProducts;
 import com.test.zensartest.data.service.DataSource;
 import com.test.zensartest.presentation.base.BasePresenter;
 
@@ -21,7 +19,7 @@ public class HomePresenter extends BasePresenter<HomeView> {
         this.dataSource = dataSource;
     }
 
-    public void getProducts(){
+    public void getProducts() {
         getView().displayProgressbar();
         compositeDisposable.add(dataSource.getAlbums()
                 .subscribe(this::handleSucess, this::handleError));
@@ -31,8 +29,7 @@ public class HomePresenter extends BasePresenter<HomeView> {
         getView().displayError(throwable.getLocalizedMessage());
     }
 
-    private void handleSucess(Product product) {
-        Log.d("success example", product.getPrice().getNow());
+    private void handleSucess(ZensarProducts product) {
         getView().displayProducts(product);
     }
 

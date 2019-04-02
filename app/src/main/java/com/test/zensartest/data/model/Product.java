@@ -49,7 +49,7 @@ public class Product {
     private String defaultSkuId;
     @SerializedName("colorSwatches")
     @Expose
-    private List<Object> colorSwatches = null;
+    private List<ColorSwatch> colorSwatches;
     @SerializedName("colorSwatchSelected")
     @Expose
     private Integer colorSwatchSelected;
@@ -221,11 +221,11 @@ public class Product {
         this.defaultSkuId = defaultSkuId;
     }
 
-    public List<Object> getColorSwatches() {
+    public List<ColorSwatch> getColorSwatches() {
         return colorSwatches;
     }
 
-    public void setColorSwatches(List<Object> colorSwatches) {
+    public void setColorSwatches(List<ColorSwatch> colorSwatches) {
         this.colorSwatches = colorSwatches;
     }
 

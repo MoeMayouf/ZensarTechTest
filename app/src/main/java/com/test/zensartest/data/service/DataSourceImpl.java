@@ -1,6 +1,6 @@
 package com.test.zensartest.data.service;
 
-import com.test.zensartest.data.model.Product;
+import com.test.zensartest.data.model.ZensarProducts;
 
 import io.reactivex.Observable;
 
@@ -13,7 +13,7 @@ public class DataSourceImpl implements DataSource {
     }
 
     @Override
-    public Observable<Product> getAlbums() {
+    public Observable<ZensarProducts> getAlbums() {
         return zensarService.getProducts();
     }
 }
