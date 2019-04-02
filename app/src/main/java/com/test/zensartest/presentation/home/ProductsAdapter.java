@@ -42,8 +42,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProductViewHolder albumViewHolder, int position) {
-        albumViewHolder.bind(products.get(position));
+    public void onBindViewHolder(@NonNull ProductViewHolder productViewHolder, int position) {
+        productViewHolder.bind(products.get(position));
     }
 
     @Override

@@ -6,6 +6,6 @@ import io.reactivex.Observable;
 
 public interface DataSource {
 
-    Observable<ZensarProducts> getAlbums();
+    Observable<ZensarProducts> getProducts();
 
 }

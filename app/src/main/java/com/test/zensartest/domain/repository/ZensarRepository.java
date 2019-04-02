@@ -16,8 +16,8 @@ public class ZensarRepository implements DataSource {
     }
 
     @Override
-    public Observable<ZensarProducts> getAlbums() {
-        return dataSource.getAlbums()
+    public Observable<ZensarProducts> getProducts() {
+        return dataSource.getProducts()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread());
     }

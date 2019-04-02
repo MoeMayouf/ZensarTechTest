@@ -21,7 +21,7 @@ public class HomePresenter extends BasePresenter<HomeView> {
 
     public void getProducts() {
         getView().displayProgressbar();
-        compositeDisposable.add(dataSource.getAlbums()
+        compositeDisposable.add(dataSource.getProducts()
                 .subscribe(this::handleSucess, this::handleError));
     }
 

@@ -13,7 +13,7 @@ public class DataSourceImpl implements DataSource {
     }
 
     @Override
-    public Observable<ZensarProducts> getAlbums() {
+    public Observable<ZensarProducts> getProducts() {
         return zensarService.getProducts();
     }
 }

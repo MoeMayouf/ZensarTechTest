@@ -51,11 +51,11 @@ public class HomeActivity extends AppCompatActivity implements PaginationListene
     }
 
     @Override
-    public void displayProducts(ZensarProducts albums) {
+    public void displayProducts(ZensarProducts zensarProducts) {
         llMessageContainer.setVisibility(View.GONE);
         progressBar.setVisibility(View.GONE);
         recyclerView.setVisibility(View.VISIBLE);
-        productsAdapter.addAll(albums.getProducts());
+        productsAdapter.addAll(zensarProducts.getProducts());
     }
 
     @Override
